@@ -24,7 +24,8 @@ SET time_zone = "+00:00";
 CREATE database IF NOT EXISTS `tms`;
 USE tms;
 
-CREATE USER IF NOT EXISTS `username`@`localhost` IDENTIFIED BY 'password';  
+CREATE USER IF NOT EXISTS `username`@`localhost` IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost';
 -- --------------------------------------------------------
 
 --
