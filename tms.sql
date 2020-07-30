@@ -21,7 +21,10 @@ SET time_zone = "+00:00";
 --
 -- Database: `tms`
 --
+CREATE database IF NOT EXISTS `tms`;
+USE tms;
 
+CREATE USER IF NOT EXISTS `username`@`localhost` IDENTIFIED BY 'password';  
 -- --------------------------------------------------------
 
 --
